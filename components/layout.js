@@ -3,6 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
+import Navbar from "./navbar.js";
+import Home from "../pages/index.js";
+import Blog from "../pages/writing.js";
+import Knits from "../pages/knits.js";
 
 export const siteTitle = "Jessica Zhang";
 
@@ -17,17 +21,20 @@ export default function Layout({ children, home }) {
                 />
                 {/*TODO: Add open graph protocol*/}
             </Head>
+            <Navbar />
             <header className={styles.header}>
                 {home ? (
                     <>
-                        <Image
-                            priority
-                            src="/images/profile_picture.png"
-                            className={utilStyles.borderCircle}
-                            height={144}
-                            width={144}
-                            alt="Jessica Zhang"
-                        />
+                        <span>
+                            <Image
+                                priority
+                                src="/images/profile.jpg"
+                                className={utilStyles.borderCircle}
+                                height={240}
+                                width={240}
+                                alt="Jessica Zhang"
+                            />
+                        </span>
                         <h1>JESSICA ZHANG</h1>
                     </>
                 ) : (

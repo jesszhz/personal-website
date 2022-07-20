@@ -11,19 +11,33 @@ export default function Home() {
                 <meta charset="UTF-8"></meta>
             </Head>
             <section className={utilStyles.headingMd}>
-                <p>Hi friends! I'm Jessica&#9996;</p>
+                <p>Hi friends! I&apos;m Jessica&#9996;</p>
                 <p>
-                    I'm a 3rd year University of Waterloo Computer Engineering
+                    I&apos;m a 3rd year University of Waterloo Computer Engineering
                     student—and a slow knitter, em dash aficionado, and the
                     current Co-Director of Hack the North.
                 </p>
+                <p>
+                    My website's a little empty right now, so come back in a few
+                    weeks to see what it looks like!
+                </p>
             </section>
             <section className={utilStyles.flexRow}>
-                <a href="/" className={utilStyles.links}>
+                <a
+                    href="https://github.com/jesszhz"
+                    target="_blank"
+                    className={utilStyles.links}
+                >
                     GitHub
                 </a>
-                <a className={utilStyles.links}>LinkedIn</a>
-                <a className={utilStyles.links}>Resume</a>
+                <a
+                    href="https://www.linkedin.com/in/jesszhz/"
+                    target="_blank"
+                    className={utilStyles.links}
+                >
+                    LinkedIn
+                </a>
+                <a href="./resume.pdf" target="_blank" className={utilStyles.links}>Resume</a>
             </section>
         </Layout>
     );

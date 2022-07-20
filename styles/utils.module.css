@@ -27,6 +27,7 @@
 
 .borderCircle {
     border-radius: 9999px;
+    flex-grow: 2;
 }
 
 .colorInherit {
@@ -59,7 +60,7 @@
 
 a.links:hover {
     text-decoration: none;
-    color: #000;
+    color: #242424;
 }
 
 .flexRow {
