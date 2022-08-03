@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
-import utilStyles from "../styles/utils.module.css";
-import Layout, { siteTitle } from "../components/layout";
+import utilStyles from "../shared/styles/utils.module.css";
+import Layout, { siteTitle } from "../components/Layout/layout";
 
 export default function Home() {
     return (

@@ -1,14 +1,10 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
 import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
-import Navbar from "./navbar.js";
-import Home from "../pages/index.js";
-import Blog from "../pages/writing.js";
-import Knits from "../pages/knits.js";
+import utilStyles from "../../shared/styles/utils.module.css";
+import Head from "next/head";
+import Navbar from "../Navbar/navbar";
+import Image from "next/image";
 
-export const siteTitle = "Jessica Zhang";
+import jessicaPic from "../../public/images/profile.jpg";
 
 export default function Layout({ children, home }) {
     return (
@@ -28,7 +24,7 @@ export default function Layout({ children, home }) {
                         <span>
                             <Image
                                 priority
-                                src="/images/profile.jpg"
+                                src={jessicaPic}
                                 className={utilStyles.borderCircle}
                                 height={240}
                                 width={240}
@@ -43,7 +39,7 @@ export default function Layout({ children, home }) {
                             <a>
                                 <Image
                                     priority
-                                    src="/images/profile_picture.png"
+                                    src={jessicaPic}
                                     className={utilStyles.borderCircle}
                                     height={108}
                                     width={108}
@@ -60,13 +56,6 @@ export default function Layout({ children, home }) {
                 )}
             </header>
             <main>{children}</main>
-            {!home && (
-                <div className={styles.backToHome}>
-                    <Link href="/">
-                        <a>Back</a>
-                    </Link>
-                </div>
-            )}
         </div>
     );
 }
