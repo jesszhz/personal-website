@@ -9,7 +9,7 @@ export default function Document() {
                 <link
                     rel="preconnect"
                     href="https://fonts.gstatic.com"
-                    crossorigin
+                    crossOrigin
                 />
                 <link rel="preconnect" href="https://api.fontshare.com" />
             </Head>

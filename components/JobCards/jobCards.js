@@ -8,6 +8,7 @@ function JobCard(props) {
                     <a
                         href={props.link}
                         target="_blank"
+                        rel="noreferrer"
                         className={styles.companyName}
                     >
                         {props.company}

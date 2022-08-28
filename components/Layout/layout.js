@@ -6,6 +6,8 @@ import Image from "next/image";
 
 import jessicaPic from "../../public/images/profile.jpg";
 
+export const siteTitle = "Jessica's website";
+
 export default function Layout({ children, home }) {
     return (
         <div className={styles.container}>
@@ -34,7 +36,7 @@ export default function Layout({ children, home }) {
                     </>
                 ) : (
                     <>
-                        <Link href="/">
+                        <link href="/">
                             <a>
                                 <Image
                                     priority
@@ -45,7 +47,7 @@ export default function Layout({ children, home }) {
                                     alt="Jessica Zhang"
                                 />
                             </a>
-                        </Link>
+                        </link>
                     </>
                 )}
             </header>
