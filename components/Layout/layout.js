@@ -31,7 +31,6 @@ export default function Layout({ children, home }) {
                                 alt="Jessica Zhang"
                             />
                         </span>
-                        <h1>JESSICA ZHANG</h1>
                     </>
                 ) : (
                     <>
@@ -47,11 +46,6 @@ export default function Layout({ children, home }) {
                                 />
                             </a>
                         </Link>
-                        <h2>
-                            <Link href="/">
-                                <a>Jessica Zhang</a>
-                            </Link>
-                        </h2>
                     </>
                 )}
             </header>
